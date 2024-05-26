@@ -10,3 +10,4 @@ function collapseNavbar() {
         navbarCollapse.classList.remove('show');
     }
 }
+

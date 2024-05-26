@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body {
     padding-top: 56px;
     font-family: "Poppins", sans-serif;
 }
 
-
-
 .navbar-nav .nav-link {
     color: #fff !important;
-    font-size: 15px;
 }
 
 .navbar-brand {
@@ -19,22 +15,10 @@ body {
 
 section {
     padding: 60px 0;
-    color: white;
 }
 
 section h2 {
     margin-bottom: 30px;
-}
-
-.education-bg {
-    background-color: #3498db;
-    /* Change to the desired background color */
-    color: #ffffff;
-    /* Set text color to white for better contrast */
-}
-
-.about {
-    color: black;
 }
 
 .list-unstyled {
@@ -49,4 +33,42 @@ section h2 {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+/* Styling for the skills section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+    /* Add padding for the arrow */
+}
+
+.skills-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    /* Adjust arrow size */
+    height: 12px;
+    background-image: url('right_arrow.png');
+    /* Replace 'right_arrow.png' with your arrow image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    /* Adjust distance between arrow and text */
 }
